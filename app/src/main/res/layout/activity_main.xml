@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.abrahamforyou.abraham.MainActivity">
+
+    <ImageView
+        android:id="@+id/foodImgView"
+        android:scaleType="fitXY"
+        android:layout_width="0dp"
+        android:layout_height="286dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/foodbg"/>
+
+    <ImageView
+        android:id="@+id/fashionImgView"
+        android:scaleType="fitXY"
+        android:layout_width="0dp"
+        android:layout_height="286dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodImgView"
+        app:srcCompat="@drawable/fashionbg"/>
+</android.support.constraint.ConstraintLayout>
